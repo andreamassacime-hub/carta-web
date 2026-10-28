@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('Fondo de rayas.jpg');
+    background-repeat: repeat;
+    background-size: 300px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 35px 25px;
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border: 3px solid #f8c8dc;
+    position: relative;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.header-img {
+    width: 140px;
+    max-height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    font-family: 'Fredoka', cursive;
+    color: #6b4e71;
+    margin-bottom: 15px;
+}
+
+.question-text {
+    font-size: 1.1rem;
+    color: #88748b;
+    margin-bottom: 10px;
+}
+
+.buttons-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.btn {
+    font-family: 'Fredoka', cursive;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 20;
+    pointer-events: auto;
+}
+
+.btn-yes {
+    background-color: #b5ead7;
+    color: #2d5a4c;
+}
+
+.btn-yes:hover {
+    background-color: #9fe3cc;
+    transform: scale(1.05);
+}
+
+.btn-no {
+    background-color: #ffb7b2;
+    color: #7a2e2b;
+}
+
+.error-msg {
+    margin-top: 20px;
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-height: 25px;
+}
+
+.main-title {
+    color: #d4a5a5;
+    font-size: 1.8rem;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.decor-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #ffdac1;
+}
+
+.letter-box {
+    background-color: #fff5f5;
+    padding: 20px;
+    border-radius: 18px;
+    border: 2px dashed #f8c8dc;
+    color: #554348;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.letter-box h2 {
+    text-align: center;
+    color: #c896a6;
+}
+
+.letter-footer {
+    text-align: right;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #b56576;
+}
+
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.confetti-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
